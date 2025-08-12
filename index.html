@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>GameDev</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
+<style>
+    body {
+        margin: 0;
+        font-family: 'Orbitron', sans-serif;
+        background-color: #000;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    /* Hero Section */
+    .hero {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #000;
+        flex-shrink: 0;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+        text-align: center;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 2s ease forwards;
+        color: white;
+        letter-spacing: 2px;
+    }
+
+    @keyframes fadeInUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Main Content */
+    .content {
+        max-width: 900px;
+        margin: auto;
+        padding: 20px;
+        flex-grow: 1;
+    }
+
+    /* Discord footer */
+    .discord-footer {
+        background-color: #121212;
+        text-align: center;
+        padding: 15px 0;
+        border-top: 1px solid #222;
+        flex-shrink: 0;
+    }
+
+    .discord-link {
+        color: white;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 1.2rem;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        transition: color 0.3s ease;
+    }
+
+    .discord-link:hover {
+        color: #5865F2; /* Discord blurple */
+    }
+
+    .discord-logo {
+        width: 24px;
+        height: 24px;
+        fill: currentColor;
+    }
+</style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<section class="hero">
+    <h1>SCP: SITE 666</h1>
+</section>
+
+<!-- Main Content -->
+<div class="content">
+    <h2>Our Games</h2>
+    <p>This is where your games and site content will go...</p>
+</div>
+
+<!-- Discord Footer -->
+<footer class="discord-footer">
+    <a href="https://discord.gg/pj88DmSP3e" target="_blank" rel="noopener noreferrer" class="discord-link" aria-label="Join our Discord server">
+        <svg class="discord-logo" viewBox="0 0 71 55" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M60.104 4.552a58.94 58.94 0 00-14.378-4.552.174.174 0 00-.186.086c-.62 1.078-1.316 2.495-1.805 3.603-5.383-.805-10.687-.805-16.003 0-.48-1.108-1.185-2.525-1.805-3.603a.173.173 0 00-.185-.086A58.5 58.5 0 0010.89 4.557a.148.148 0 00-.069.053c-8.35 12.52-10.37 24.67-9.163 36.597a.182.182 0 00.066.124 59.528 59.528 0 0017.993 9.155.174.174 0 00.19-.061c1.389-1.906 2.63-3.92 3.67-6.022a.175.175 0 00-.1-.238 40.985 40.985 0 01-5.865-2.81.174.174 0 01-.018-.291c.395-.3.79-.6 1.168-.89a.174.174 0 01.18-.025c12.336 5.77 25.68 5.77 37.971 0a.173.173 0 01.182.025c.378.29.773.59 1.168.89a.174.174 0 01-.017.291 40.44 40.44 0 01-5.865 2.81.175.175 0 00-.099.238c1.04 2.102 2.281 4.116 3.67 6.022a.174.174 0 00.19.061 59.487 59.487 0 0017.994-9.155.182.182 0 00.067-.124c1.38-11.927-.813-24.077-9.144-36.599a.146.146 0 00-.069-.053zm-37.49 29.24c-3.497 0-6.365-3.2-6.365-7.136 0-3.936 2.83-7.136 6.365-7.136 3.54 0 6.397 3.2 6.365 7.136 0 3.936-2.825 7.136-6.365 7.136zm25.805 0c-3.498 0-6.366-3.2-6.366-7.136 0-3.936 2.83-7.136 6.366-7.136 3.54 0 6.398 3.2 6.366 7.136 0 3.936-2.827 7.136-6.366 7.136z"/>
+        </svg>
+        our discord server
+    </a>
+</footer>
+
+</body>
+</html>
